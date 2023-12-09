@@ -13,12 +13,22 @@ public class Classes {
         Person p3 = new Person();
         p3.string("janybek");
         System.out.println(p3.number(23));
+        Person lastName = new Person();
+        lastName.lastName("");
+        Person getHouse = new Person();
 
+        int house = getHouse.getHouse(13);
+
+        if (house == 0){
+            System.out.println("Ввевите число ");
+        } else { System.out.println(house);}
     }
 }
 class Person {
     int age;
     String name;
+    private int house;
+    private String lastName;
     void speak() {
         for (int i = 0;i < 3; i++) {
             System.out.println("I love you my " + name  );
@@ -39,5 +49,22 @@ class Person {
      int number (int number) {
         return age = number;
      }
+     public void  lastName (String userName) {
+        if (userName.isEmpty()) {
+            System.out.println("Введите имя");
+        }
+        else {
+            String name = lastName = userName;
+            System.out.println(name);
+        }
+     }
 
+    public int getHouse(int number ) {
+        if (number == 0) {
+            return  0;
+        }
+        else {
+            return house = number;
+        }
+    }
 }
