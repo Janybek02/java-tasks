@@ -10,6 +10,10 @@ public class Classes {
         System.out.println( p2.name + " " +  p2.calculate() + " years old");
         p1.sayHello();
         p2.speak();
+        Person p3 = new Person();
+        p3.string("janybek");
+        System.out.println(p3.number(23));
+
     }
 }
 class Person {
@@ -26,8 +30,14 @@ class Person {
       int calculate(){
         int year = 65;
          int newNum = year -age;
-
             return newNum - age;
+     }
+     void string (String userName ) {
+//        name = userName;
+         System.out.println(name = userName);
+     }
+     int number (int number) {
+        return age = number;
      }
 
 }
